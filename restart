@@ -1,0 +1,4 @@
+#!/bin/bash
+docker stop dockerelk_kibana_1 dockerelk_logstash_1 dockerelk_elasticsearch_1
+docker rm dockerelk_kibana_1 dockerelk_logstash_1 dockerelk_elasticsearch_1
+docker-compose up -d

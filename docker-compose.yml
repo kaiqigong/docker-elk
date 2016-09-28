@@ -4,16 +4,21 @@ elasticsearch:
   ports:
     - "9200:9200"
     - "9300:9300"
-
+  volumes:
+    - /data/storage:/usr/share/elasticsearch/data
 logstash:
   build: logstash/
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - ./logstash/config:/etc/logstash/conf.d
+    - /data/log:/data/log
   ports:
     - "5000:5000"
+    - "5044:5044"
   links:
     - elasticsearch
+  environment:
+    - LS_HEAP_SIZE=2048m
 kibana:
   build: kibana/
   volumes:
