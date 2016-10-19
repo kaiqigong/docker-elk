@@ -1,3 +1,8 @@
+# 改动
+- logstash增加beat，file插件
+- 所有端口绑定到127.0.0.1
+
+
 # Docker ELK stack
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
