@@ -1,7 +1,7 @@
 # 改动
 - logstash增加beat，file插件
 - 所有端口绑定到127.0.0.1
-
+- 新增rebuild(修改Dockerfile后需要执行)，restart（修改compose文件后执行）脚本
 
 # Docker ELK stack
 
